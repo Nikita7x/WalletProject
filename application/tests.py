@@ -44,6 +44,8 @@ class TestTransactions(TestCase):
         }
 
         response = self.client.put(f'/api/transactions/{self.transaction.id}/', data)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.data['amount'], str(data['amount']))
 
 
 class TestWallets(TestCase):

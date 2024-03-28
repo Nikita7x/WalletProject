@@ -9,6 +9,7 @@
 ```bash
 docker-compose up --build
 ```
+The app will be available here: https://127.0.0.1:8000
 
 # Testing
 ```bash
